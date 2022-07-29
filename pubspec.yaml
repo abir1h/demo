@@ -63,6 +63,8 @@ dependencies:
   font_awesome_flutter: ^9.2.0
   http: ^0.13.3
   awesome_dialog: ^2.2.1
+  sizer: ^2.0.15
+  flutter_otp_text_field: ^1.0.0
 
 
 dev_dependencies:
@@ -103,10 +105,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/Ubuntu-Bold.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
