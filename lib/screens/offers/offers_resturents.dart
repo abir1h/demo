@@ -126,7 +126,7 @@ class _resturent_offerState extends State<resturent_offer> {
                                   //   context: context,
                                   //   builder: (context) => CustomDialog(
                                   //       height: size.height, width: size.width),
-                                  // );
+                                  // )
                                 },
                                 child: Container(
                                   height: size.height / 4,
