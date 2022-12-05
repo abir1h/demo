@@ -5,17 +5,15 @@ import 'package:sizer/sizer.dart';
 class MediunText extends StatelessWidget {
   String text;
   double? size;
-  Color ? color;
+  Color? color;
   MediunText({required this.text, this.size = 10, this.color = Colors.black});
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,
+    return Text(
+      text,
       style: TextStyle(
-          fontWeight: FontWeight.w400,
-          fontSize: size?.sp,
-          color: color
-      ),
+          fontWeight: FontWeight.w400, fontSize: size?.sp, color: color),
     );
   }
 }
