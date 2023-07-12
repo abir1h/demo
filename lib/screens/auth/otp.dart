@@ -6,7 +6,6 @@ import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/route_manager.dart';
-import 'package:learning_school_bd/screens/MainHome/Main-Home.dart';
 import 'package:learning_school_bd/utils/Appurl.dart';
 import 'package:learning_school_bd/utils/colors.dart';
 import 'package:http/http.dart'as http;
@@ -40,7 +39,7 @@ class _otpState extends State<otp> {
     };
     var request = await http.MultipartRequest(
       'POST',
-      Uri.parse(AppUrl.otp),
+      Uri.parse(AppUrl.otpConfirm),
     );
 
     request.fields.addAll({
@@ -68,8 +67,9 @@ class _otpState extends State<otp> {
                 backgroundColor: Colors.black54,
                 textColor: Colors.white,
                 fontSize: 16.0);
-            Get.to(() => Main_home(
-            ));
+         /*   Get.to(() => Main_home(
+              indexof: 0,
+            ));*/
           }else{
             setState(() {
               submit = false;
@@ -161,7 +161,7 @@ class _otpState extends State<otp> {
                   padding: const EdgeInsets.only(left: 30, right: 30),
                   child: OtpTextField(
                     numberOfFields: 4,
-                    focusedBorderColor: Colors.orange,
+                    focusedBorderColor: AppColors.mainColor,
                     filled: true,
                     fieldWidth: 70,
 
@@ -216,7 +216,7 @@ class _otpState extends State<otp> {
                               height: size.height / 15,
                               width: size.width,
                               decoration: BoxDecoration(
-                                  color: AppColors.orange,
+                                  color: AppColors.mainColor,
                                   borderRadius: BorderRadius.circular(10)),
                               child: const Center(
                                   child: Text(
@@ -229,7 +229,7 @@ class _otpState extends State<otp> {
                         ),
                       )
                     : const SpinKitCircle(
-                        color: Colors.orange,
+                  color: AppColors.mainColor,
                         size: 28,
                       ),
                 const SizedBox(

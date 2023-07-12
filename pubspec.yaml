@@ -37,14 +37,15 @@ dependencies:
   shared_preferences: ^2.0.15
   flutter_bounce: ^1.1.0
   expandable: ^5.0.1
+  autoscale_tabbarview: ^1.0.2
+
   get: ^4.6.5
-  cached_network_image: ^3.2.0
+
   table_calendar: ^3.0.0
   flutter_spinkit: ^5.1.0
   persistent_bottom_nav_bar: ^4.0.2
   circular_profile_avatar: ^2.0.5
   flutter_rating_bar: ^4.0.1
-  flutter_svg: ^1.0.0
   flutter_custom_clippers: ^2.0.0
   introduction_screen: ^2.1.0
   photo_view: ^0.14.0
@@ -77,18 +78,34 @@ dependencies:
   onesignal_flutter: ^3.4.2
   flutter_dash: ^1.0.0
   sticky_headers: ^0.3.0+2
-
-
-
-
-
+  flutter_share: ^2.0.0
+  inview_notifier_list: ^3.0.0
+  pull_to_refresh: ^2.0.0
+  scroll_app_bar: ^2.0.0
+  flutter_cache_manager: ^3.3.0
+  otp_autofill: ^2.1.0
+  pin_code_fields: ^7.4.0
+  timer_count_down: ^2.2.2
+  sms_autofill: ^2.2.0
+  flutter_html: ^2.2.1
   lottie: ^1.4.3
+  url_launcher: ^6.1.9
+  anchor_tabs: ^0.0.7
+  dio: ^4.0.6
+  flutter_pretty_dio_logger: ^2.0.3
+  syncfusion_flutter_gauges: ^21.2.4
+  super_banners: ^0.0.1
+  rotated_corner_decoration: ^2.1.0+1
+  fast_cached_network_image:
 
+  webview_flutter: ^2.8.0
+  countdown_progress_indicator: ^0.1.2
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  change_app_package_name: ^1.1.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -111,22 +128,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/images/g1.png
-    - assets/images/g2.png
-    - assets/images/g3.png
-    - assets/images/g4.png
-    - assets/images/g5.png
-    - assets/images/g6.png
-    - assets/images/Home.svg
-    - assets/images/Stoke.svg
-    - assets/images/food.svg
-    - assets/images/group.svg
-    - assets/images/price.svg
-    - assets/images/service.svg
-    - assets/images/offers.svg
-    - assets/images/save.svg
-    - assets/images/google.png
-    #   - images/a_dot_ham.jpeg
+    - assets/images/luser.png
+    - assets/images/live.png
+    - assets/images/g.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -146,6 +150,17 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Medium.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Black.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+        - asset: assets/fonts/Inter-ExtraLight.ttf
+        - asset: assets/fonts/Inter-Light.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset: assets/fonts/Inter-Thin.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

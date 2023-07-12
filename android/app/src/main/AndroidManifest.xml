@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.learining.learning_school_bd">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.min.partho">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -13,10 +14,19 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
    <application
-        android:label="Resturent"
-        android:usesCleartextTraffic="true"
+        android:label="Medsir"
         android:name="${applicationName}"
+       tools:replace="android:label"
         android:icon="@mipmap/ic_launcher">
+       <provider
+           android:name="androidx.core.content.FileProvider"
+           android:authorities="${applicationId}.provider"
+           android:exported="false"
+           android:grantUriPermissions="true">
+           <meta-data
+               android:name="android.support.FILE_PROVIDER_PATHS"
+               android:resource="@xml/provider_paths"/>
+       </provider>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -42,7 +52,8 @@
                 android:name="com.onesignal.NotificationAccentColor.DEFAULT"
                 android:value="FFF88B51" />
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN"
+                    />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>

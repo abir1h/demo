@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "772929394128",
+    "project_id": "gosy-3fa73",
+    "storage_bucket": "gosy-3fa73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772929394128:android:34aebccd1793d19607d5d5",
+        "android_client_info": {
+          "package_name": "com.min.partho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772929394128-sdt9o6r3sm2gc97mrk163c9rbs6e99r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.10min.partho",
+            "certificate_hash": "a07301a82847423a947f917f97aa1740d6a39f72"
+          }
+        },
+        {
+          "client_id": "772929394128-92p8pcqea1tnv65j2k7282dnp630mmg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuTiTHBLnyZ2wPU2bkiqsG3Rr4G9L5obs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772929394128-92p8pcqea1tnv65j2k7282dnp630mmg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
